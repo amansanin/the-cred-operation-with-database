@@ -57,8 +57,10 @@ def delete_task_by_id(task_id:int):
 #     {"id": 3, "name": "David", "age": 20} ]
     
 
-# @app.get("/student")
-# def get_student(age:int=None):
-#     if age is not None:
-#         return[s for s in student if s["age"]== age]
-#     return student
+# # @app.get("/student")
+# # def get_student(age:int=None):
+# #     if age is not None:
+# #         return[s for s in student if s["age"]== age]
+# #     return student
+
+

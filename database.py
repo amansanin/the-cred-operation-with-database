@@ -76,6 +76,10 @@ def delete_task(task_id):
     conn.commit()
     conn.close()
 
+def filter_task (status=None,priority=None):
+    conn=connection()
+    cur=conn.cursor()
+    cur.execute("SELECT * FROM tasks WHERE status = ?", (status,))
 
-
-
+    tasks=cur.fetchall()  
+    conn.close()
